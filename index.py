@@ -71,7 +71,7 @@ def scheduledAction(d: dataQueue):
 scheduler = BackgroundScheduler()
 print("STARTING")
 #scheduler.add_job(scheduledAction, 'interval',args=[data], seconds=30)
-scheduler.add_job(getnbascores, CronTrigger.from_crontab('*/5 0-2,12-23 * * *'))
+#scheduler.add_job(getnbascores, CronTrigger.from_crontab('*/5 0-2,12-23 * * *'))
 try:
     scheduler.start()
 except (KeyboardInterrupt):
